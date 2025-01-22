@@ -63,7 +63,7 @@ const NoteCard = ({ note }) => {
 
     const saveData = async (key, value) => {
         const payload = { [key]: JSON.stringify(value) };
-        console.log("Save data called:", payload);
+        // console.log("Save data called:", payload);
         try {
             await db.notes.update(note.$id, payload);
         } catch (error) {
